@@ -1,0 +1,42 @@
+<snippet>
+  <content><![CDATA[
+version: '3.9'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - '4000:4000'
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    environment:
+      - DATABASE_URL=postgres://user:password@db:5432/mydb
+
+  db:
+    image: postgres:14
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mydb
+
+volumes:
+  db_data:
+]]></content>
+  <tabTrigger>docker-compose</tabTrigger>
+  <scope>source.yaml</scope>
+  <description>Docker Compose frontend + backend + db</description>
+</snippet>

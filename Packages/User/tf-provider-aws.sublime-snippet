@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+provider "aws" {
+  region  = "us-east-1"
+  profile = "default"
+}
+]]></content>
+  <tabTrigger>tf-provider-aws</tabTrigger>
+  <scope>source.terraform</scope>
+  <description>AWS Provider Block</description>
+</snippet>

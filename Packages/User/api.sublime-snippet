@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+import type { NextApiRequest, NextApiResponse } from 'next'
+
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  if (req.method === 'GET') {
+    res.status(200).json({ message: 'Hello from API!' })
+  } else {
+    res.status(405).end() // Method Not Allowed
+  }
+}
+]]></content>
+  <tabTrigger>api</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Next.js API Route</description>
+</snippet>

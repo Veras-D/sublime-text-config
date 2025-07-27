@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+.env
+]]></content>
+  <tabTrigger>dockerignore</tabTrigger>
+  <scope>text.plain</scope>
+  <description>.dockerignore default</description>
+</snippet>

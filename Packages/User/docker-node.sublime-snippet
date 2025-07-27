@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]
+]]></content>
+  <tabTrigger>docker-node</tabTrigger>
+  <scope>source.dockerfile</scope>
+  <description>Dockerfile for Node.js + TypeScript dev</description>
+</snippet>

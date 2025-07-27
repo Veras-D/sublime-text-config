@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+apiVersion: v1
+kind: Service
+metadata:
+  name: $1-service
+spec:
+  selector:
+    app: $1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
+]]></content>
+  <tabTrigger>k8s-service</tabTrigger>
+  <scope>source.yaml</scope>
+  <description>Kubernetes Service ClusterIP</description>
+</snippet>

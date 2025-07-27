@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+variable "$1" {
+  type        = $2
+  description = "$3"
+  default     = $4
+}
+]]></content>
+  <tabTrigger>tf-var</tabTrigger>
+  <scope>source.terraform</scope>
+  <description>Terraform Variable</description>
+</snippet>

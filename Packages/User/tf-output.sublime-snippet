@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+output "$1" {
+  value = $2
+  description = "$3"
+}
+]]></content>
+  <tabTrigger>tf-output</tabTrigger>
+  <scope>source.terraform</scope>
+  <description>Terraform Output</description>
+</snippet>

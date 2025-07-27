@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+resource "aws_instance" "$1" {
+  ami           = "$2"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "$1"
+  }
+}
+]]></content>
+  <tabTrigger>tf-aws-ec2</tabTrigger>
+  <scope>source.terraform</scope>
+  <description>AWS EC2 Instance</description>
+</snippet>

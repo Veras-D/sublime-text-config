@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+import React from 'react'
+
+interface ${1:Props} {
+  ${2:name}: string
+}
+
+const ${3:ComponentName}: React.FC<$1> = ({ $2 }) => {
+  return (
+    <div>
+      Hello, {$2}!
+    </div>
+  )
+}
+
+export default $3
+]]></content>
+  <tabTrigger>rfc</tabTrigger>
+  <scope>source.tsx</scope>
+  <description>React Function Component with Props</description>
+</snippet>

@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+import { GetServerSideProps } from 'next'
+
+interface Props {
+  // define props
+}
+
+const $1 = ({ }: Props) => {
+  return (
+    <div>
+      $2
+    </div>
+  )
+}
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  return {
+    props: {} // will be passed to the page component as props
+  }
+}
+
+export default $1
+]]></content>
+  <tabTrigger>gssp</tabTrigger>
+  <scope>source.tsx</scope>
+  <description>Next.js getServerSideProps Page</description>
+</snippet>

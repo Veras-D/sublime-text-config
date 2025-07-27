@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: $1-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: $2.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: $1-service
+                port:
+                  number: 80
+]]></content>
+  <tabTrigger>k8s-ingress</tabTrigger>
+  <scope>source.yaml</scope>
+  <description>Kubernetes Ingress</description>
+</snippet>

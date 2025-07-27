@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+terraform {
+  backend "s3" {
+    bucket = "$1"
+    key    = "$2/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+]]></content>
+  <tabTrigger>tf-backend-s3</tabTrigger>
+  <scope>source.terraform</scope>
+  <description>Remote Backend S3</description>
+</snippet>

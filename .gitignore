@@ -1,0 +1,35 @@
+# Ignorar cache, sessões e logs
+/Local/
+/Log/
+/Backup/
+/Trash/
+
+# Ignorar pacotes instalados (reinstaláveis via Package Control)
+/Installed Packages/
+
+# Ignorar libs internas de runtime Python
+/Lib/
+
+# Ignorar pacotes compilados de ícones e temas que não são seus
+/Packages/zzz A File Icon zzz/
+/Packages/Aura Theme Color Scheme/
+
+# Ignorar histórico de execução de pacotes
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+
+# Ignorar arquivos do Package Control (exceto settings)
+/User/Package Control.user-ca-bundle
+
+# Ignorar arquivos de projetos e sessões temporárias
+*.sublime-project
+*.sublime-workspace
+*.sublime_session
+*.backup
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+module "$1" {
+  source = "./modules/$1"
+
+  $2
+}
+]]></content>
+  <tabTrigger>tf-module</tabTrigger>
+  <scope>source.terraform</scope>
+  <description>Terraform Module Block</description>
+</snippet>
