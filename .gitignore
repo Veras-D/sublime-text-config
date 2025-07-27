@@ -4,12 +4,8 @@
 /Backup/
 /Trash/
 
-
 # Ignorar libs internas de runtime Python
 /Lib/
-
-# Ignorar pacotes compilados de ícones e temas que não são seus
-/Packages/zzz A File Icon zzz/
 
 # Ignorar histórico de execução de pacotes
 Package Control.last-run
