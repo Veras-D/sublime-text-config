@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+]]></content>
+  <tabTrigger>prisma-db</tabTrigger>
+  <scope>source.prisma</scope>
+  <description>Datasource PostgreSQL</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+const $1Mock = jest.fn()
+]]></content>
+  <tabTrigger>jest-mock</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Mock de função com jest.fn()</description>
+</snippet>

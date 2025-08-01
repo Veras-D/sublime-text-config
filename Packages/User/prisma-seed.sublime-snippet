@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+import { PrismaClient } from '@prisma/client'
+
+const prisma = new PrismaClient()
+
+async function main() {
+  await prisma.$1.create({
+    data: {
+      // your seed data here
+    },
+  })
+}
+
+main()
+  .then(async () => {
+    await prisma.$disconnect()
+  })
+  .catch(async (e) => {
+    console.error(e)
+    await prisma.$disconnect()
+    process.exit(1)
+  })
+]]></content>
+  <tabTrigger>prisma-seed</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Função de seed com Prisma</description>
+</snippet>

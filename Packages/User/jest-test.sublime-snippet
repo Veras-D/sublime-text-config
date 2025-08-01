@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+test('$1', () => {
+  $2
+})
+]]></content>
+  <tabTrigger>jest-test</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Teste básico Jest</description>
+</snippet>

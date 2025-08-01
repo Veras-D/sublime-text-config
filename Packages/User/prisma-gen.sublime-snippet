@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+generator client {
+  provider = "prisma-client-js"
+}
+]]></content>
+  <tabTrigger>prisma-gen</tabTrigger>
+  <scope>source.prisma</scope>
+  <description>Gerador Prisma Client</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt
+]]></content>
+  <tabTrigger>prisma-time</tabTrigger>
+  <scope>source.prisma</scope>
+  <description>Campos de tempo</description>
+</snippet>

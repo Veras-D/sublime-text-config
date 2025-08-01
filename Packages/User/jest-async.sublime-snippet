@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+test('$1', async () => {
+  const result = await $2()
+  expect(result).toBe($3)
+})
+]]></content>
+  <tabTrigger>jest-async</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Teste assíncrono com async/await</description>
+</snippet>

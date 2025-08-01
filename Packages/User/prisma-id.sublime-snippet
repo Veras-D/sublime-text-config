@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+id Int @id @default(autoincrement())
+]]></content>
+  <tabTrigger>prisma-id</tabTrigger>
+  <scope>source.prisma</scope>
+  <description>ID autoincrementável</description>
+</snippet>

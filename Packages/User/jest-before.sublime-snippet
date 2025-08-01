@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+beforeEach(() => {
+  $1
+})
+]]></content>
+  <tabTrigger>jest-before</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Setup beforeEach Jest</description>
+</snippet>

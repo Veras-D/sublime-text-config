@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+$1   $2?   @relation(fields: [$3], references: [$4])
+$3   Int?
+]]></content>
+  <tabTrigger>prisma-rel</tabTrigger>
+  <scope>source.prisma</scope>
+  <description>Relacionamento Prisma</description>
+</snippet>

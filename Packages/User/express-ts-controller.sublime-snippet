@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+import { Request, Response } from 'express'
+
+export const $1Controller = (req: Request, res: Response) => {
+  try {
+    res.status(200).json({ message: '$1 success' })
+  } catch (err) {
+    res.status(500).json({ error: 'Something went wrong' })
+  }
+}
+]]></content>
+  <tabTrigger>express-ts-controller</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Typed Express Controller</description>
+</snippet>

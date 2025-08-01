@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+expect($1).toBe($2)
+]]></content>
+  <tabTrigger>jest-expect</tabTrigger>
+  <scope>source.ts</scope>
+  <description>expect().toBe()</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+describe('$1', () => {
+  $2
+})
+]]></content>
+  <tabTrigger>jest-describe</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Bloco describe do Jest</description>
+</snippet>

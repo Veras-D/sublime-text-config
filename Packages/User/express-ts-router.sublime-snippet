@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+import { Router, Request, Response } from 'express'
+
+const router = Router()
+
+router.get('/$1', (req: Request, res: Response) => {
+  res.status(200).json({ message: '$1 route working!' })
+})
+
+export default router
+]]></content>
+  <tabTrigger>express-ts-router</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Express + TS router</description>
+</snippet>

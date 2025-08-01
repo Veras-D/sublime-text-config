@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+import { Request, Response, NextFunction } from 'express'
+
+export function $1Middleware(req: Request, res: Response, next: NextFunction) {
+  console.log('[$1] Middleware activated 🚦')
+  next()
+}
+]]></content>
+  <tabTrigger>express-ts-mw</tabTrigger>
+  <scope>source.ts</scope>
+  <description>Typed Express Middleware</description>
+</snippet>

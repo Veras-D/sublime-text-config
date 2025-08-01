@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+model $1 {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+]]></content>
+  <tabTrigger>prisma-model</tabTrigger>
+  <scope>source.prisma</scope>
+  <description>Modelo Prisma básico</description>
+</snippet>
